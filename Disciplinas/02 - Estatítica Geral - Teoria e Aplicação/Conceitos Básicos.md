@@ -1,15 +1,15 @@
-### Introdução a Estatistica
+# Introdução a Estatistica
 
 [Simbolos](https://latex.wikia.org/wiki/List_of_LaTeX_symbols) matemáticos/estatisticos
 
-> Conceitos básicos da Estatística
+## Conceitos básicos da Estatística
 
 * População: Todos os elementos existentes.
 * Amostragem: Sub-conjunto de itens da população.
 * Parâmetros: São as informações obtidas atraves de análises (médias, percentuais...) com base em todos os indivíduos da população.
 * Estatíticas: São as informações obtidas atraves de analises com base nos indivíduos de uma amostragem.
 
-> Tipos de dados
+## Tipos de dados
 
 Tipo de dado ou variável é a forma que classificamos toda informação obtida durante uma pesquisa. E elas são classificadas de forma diferente de acordo com a natureza dessa informação, sendo elas:
 
@@ -20,7 +20,7 @@ Tipo de dado ou variável é a forma que classificamos toda informação obtida 
   * *Discretas*: Resultam de um conjunto finido ou enumerável de valores possíveis - **quantidade**. (ex: número de alunos; números de ventiladores com defeitos. Normalmente são números inteiros)
   * *Continuas*: Resultam em um número infinito de valores possíveis - **mensuração**. (ex: medição de uma área; peso; altura; volume; área. Podem vir em valores inteiros ou decimal)
 
-> Medidas de tendência central
+## Medidas de tendência central
 
 São meios de verificar como os dados estão distribuidos. Se eles se encontram mais centralizados ou se tendem para alguma ponta.
 
@@ -33,7 +33,7 @@ São meios de verificar como os dados estão distribuidos. Se eles se encontram 
 *  **Moda**: É o valor que aparece com maior frequência na amostragem.
    *  Normalmente é mais utilizado com dados do tipo categórico; Pode existir uma ou mais moda ou até mesmo nenhuma.
 
-> Medidas de posição relativa
+## Medidas de posição relativa
 
 Representa dentro da estatistica medidas que dividem nossa amostra em determinadas parcelas.
 
@@ -52,7 +52,7 @@ Para calcular devemos primeiro seguir os seguintes passos:
   * Se o valor de `L` é um *número inteiro* o percentil $\mathrm{P}{k}$ será obtido pela média entre os valores que ocupam as posições L e L+1.
   * Se o valor de `L` é um *número decimal* devemos arredondar o valor de `L` para o *maior inteiro* mais proximo, ai sim o percentil $\mathrm{P}{k}$ será obtido pelo valor que ocupa a posição `L` já arredondada.
 
->> Exemplos
+> Exemplos
 
 Dado os seguintes dados:
 ```python
@@ -162,4 +162,3 @@ Escore Z =  \frac{x - \overline{x}}{S} = \frac{83-76,0833}{3,5280} = +1,9605
 ```
 O consumidor mais lento está a 1,9605 desvio padrão ACIMA da média do tempo gasto entre o início e a finalização da compra.
 ```
-
