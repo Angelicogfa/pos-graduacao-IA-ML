@@ -162,3 +162,99 @@ Escore Z =  \frac{x - \overline{x}}{S} = \frac{83-76,0833}{3,5280} = +1,9605
 ```
 O consumidor mais lento está a 1,9605 desvio padrão ACIMA da média do tempo gasto entre o início e a finalização da compra.
 ```
+---
+## Medidas de dispersão
+
+São maneiras que possuimos para medir a **variabilidade** dos dados
+
+* Amplitude: É a diferença entre o maior e o menor valor dos dados. Sua notação é dada pelo simbolo: $\mathrm{A}$
+* Variância: É responsável por explicitar a variação dos dados com base na média. As notações utilizadas para representar a variação são:
+  * Variância Populacional (Parâmetro):  **$\sigma\mathrm{^2}$**
+  * Variância Amostral (Estatistica): **$\mathrm{s^2}$**
+* Desvio Padrão: É responsável por explicitar a distancia entre os dados com base na média. As notações utilizadas para representar o desvio padrão são:
+  * Desvio padrão Populacional: **$\sigma$**
+  * Desvio padrao Amostral: **$\mathrm{s}$**
+* Coeficiente de Variação: É uma medida de variabilidade em termos relativos, ou seja, vai dar um percentual de quao distante esse dado esta da média.
+
+---
+O calculo da variância amostral pode ser feito por:
+```math
+s^2 = \frac{\sum_{i=1}^{n} (x_i-\overline{x})^2}{n-1}
+```
+onde:
+* $\mathrm{x_i}$: Cada elemento da amostragem
+* $\overline{x}$: Média da amostragem
+* $\mathrm{n}$: Quantidade de registros da amostragem
+
+
+É possível perceber que a unidade de medida da variância equivale à unidade de medida dos dados ao quadrado. Dessa maneira, é mais comum trabalharmos com a **raiz quadrada da variância**, ou seja, com o *desvio padrão*.
+
+---
+
+O calculo do coeficiente de variação pode ser feito por:
+```math
+CV = \frac{\mathrm{s}}{\overline{x}}.100
+```
+
+Onde,
+* $\mathrm{s}$: Desvio padrão
+* $\overline{x}$: Média da amostragem
+
+
+---
+Exemplo:
+Considere uma amostragem do tempo (em minutos) que funcionarios de uma empresa gastam para chegar ao trabalha:
+
+```python
+tempo = [5, 12, 25, 43, 67]
+```
+Para calcular o desvio padrão de tais medidas precisamos primeiramente calcular a média amostral:
+
+```math
+\overline{x} = \frac{5+12+25+43+67}{5} = 30,4
+```
+
+Seguindo com o cálculo do desvio padrão (raiz quadrada da variância):
+
+```math
+s = \surd{\frac{(5-30,4)^2 + (12-30,4)^ + (25-30,4)^2 + (43-30,4)^2 + (67,30-4)^2}{5-1}}
+```
+```math
+s = 25,0559 \ minutos
+```
+
+Uma variabilidade muito perto da média, indica uma **variabilidade muito alta**
+
+---
+Considere as notas de três turmas em prova de 10 pontos:
+
+| Turma | n  | Média | Desvio Padrão |
+| ----- | -- |-------|---------------|
+| A     | 10 |    5  |  1,5          |
+| B     | 10 |    5  |  3            |
+| C     | 10 |    5  |  4,5          |
+
+Qual turma apresentou maior variabilidade nas notas ?
+
+R: C.
+
+| Turma | n  | Média | Desvio Padrão |
+| ----- | -- |-------|---------------|
+| D     | 10 |    3  |  1,5          |
+| E     | 10 |    8  |  3            |
+| F     | 10 |    5  |  4,5          |
+
+Qual turma apresentou maior variabilidade nas notas. ?
+
+R: Como temos turmas com três médias muito destintas, porque os desvio padrão foram obtidos tomando médias muito diferente. Nessa situação podemos usar o **Coeficiente de Variação**
+
+| Turma | n  | Média | Desvio Padrão | CV  |
+| ----- | -- |-------|---------------|-----|
+| D     | 10 |    3  |  1,5          | 50% |
+| E     | 10 |    8  |  3            |37,5%|
+| F     | 10 |    5  |  4,5          | 90% |
+
+R: A maior variabilidade é a turma F, que esta com um coeficiente de variação em torno de 90%.
+
+E qual possui a maior homogeneidade ?
+A que possui a maior homogeneidade é a turma E que possui um coeficiente de variação de 37,5%
