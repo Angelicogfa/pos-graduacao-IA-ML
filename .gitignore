@@ -13,6 +13,8 @@
 profile_default/
 ipython_config.py
 
+/Disciplinas/11 - Analise de Imagens e Visao Computacional/Modulo 03/deep
+
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
 

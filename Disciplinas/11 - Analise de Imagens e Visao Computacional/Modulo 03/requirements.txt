@@ -1,7 +1,0 @@
-jupyter 
-notebook
-numpy
-pandas
-matplotlib
-tensorflow
-keras
